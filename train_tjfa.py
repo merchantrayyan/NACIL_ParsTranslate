@@ -24,19 +24,19 @@ def get_data(iterate):
     test = []
     dev = []
 
-    with open("/home/rayyan/ParsTransliteration/training/datasets/"+str(iterate) + "_data/train.txt","r") as a:
+    with open("/ParsTransliteration/training/datasets/"+str(iterate) + "_data/train.txt","r") as a:
         text = a.readlines()
         farsi = text[0::2]
         tajik = text[1::2]
         for i in range(0,len(tajik)):
             train.append(('tj',tajik[i].strip('\n').lower(),farsi[i].strip('\n')))
-    with open("/home/rayyan/ParsTransliteration/training/datasets/"+str(iterate) + "_data/dev.txt","r") as a:
+    with open("/ParsTransliteration/training/datasets/"+str(iterate) + "_data/dev.txt","r") as a:
         text = a.readlines()
         farsi = text[0::2]
         tajik = text[1::2]
         for i in range(0,len(tajik)):
             dev.append(('tj',tajik[i].strip('\n').lower(),farsi[i].strip('\n')))
-    with open("/home/rayyan/ParsTransliteration/training/datasets/"+str(iterate) + "_data/test.txt","r") as a:
+    with open("/ParsTransliteration/training/datasets/"+str(iterate) + "_data/test.txt","r") as a:
         text = a.readlines()
         farsi = text[0::2]
         tajik = text[1::2]
