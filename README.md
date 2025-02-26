@@ -1,5 +1,5 @@
 # 
-Code Repository for the paper [ANONYMIZED]
+Code Repository for the paper "Connecting the Persian-speaking World through Transliteration"
 
 ```
 .
